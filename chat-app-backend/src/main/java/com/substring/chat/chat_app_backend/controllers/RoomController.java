@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin("https://localhost:3000")
+@CrossOrigin("https://localhost:5173")
 public class RoomController {
 
 
@@ -39,6 +39,10 @@ public class RoomController {
         Room savedRoom=roomRepository.save(room);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(room);
+    }
+    @GetMapping("/public")
+    public String publicCheck(){
+        return "hi";
     }
 
     //get room:join

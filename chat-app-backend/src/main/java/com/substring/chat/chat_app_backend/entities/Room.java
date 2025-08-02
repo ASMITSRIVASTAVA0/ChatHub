@@ -22,17 +22,5 @@ public class Room {
     private String roomId;
     private List<Message> messages = new ArrayList<>();
 
-//    public void setRoomId(String roomId){
-//        this.roomId=roomId;
-//    }
-//    public String getRoomId(){
-//        return this.roomId;
-//    }
-//    public void setMessages(List<Message> messages){
-//        this.messages=messages;
-//    }
-//    public List<Message> getMessages(){
-//        return this.messages;
-//
-//    }
+
 }
